@@ -1,0 +1,22 @@
+[[package]]
+name = "pytest"
+version = "8.3.5"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+  "iniconfig",
+  "packaging",
+  "pluggy>=0.12,<2",
+  "exceptiongroup>=1.0.0rc10; python_version < '3.11'",
+  "tomli>=1.0.0; python_version < '3.11'",
+]
+sdist = { url = "https://files.pythonhosted.org/.../pytest-8.3.5.tar.gz", hash = "sha256:..." }
+wheels = [{ url = "https://files.pythonhosted.org/.../pytest-8.3.5-py3-none-any.whl", hash = "sha256:..." }]
+
+[[package]]
+name = "pluggy"
+version = "1.5.0"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "...", hash = "sha256:..." }
+wheels = [{ url = "...", hash = "sha256:..." }]
+
+# ... и так далее для iniconfig, packaging и др.
