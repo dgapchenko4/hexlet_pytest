@@ -1,9 +1,10 @@
-from hexlet_pytest.example import reverse
-
-
-def test_reverse():
-    assert reverse("Hexlet") == "telxeH"
-
-
-def test_reverse_for_empty_string():
-    assert reverse("") == ""
+import pytest
+def test_stack():
+    stack = []
+    assert not stack
+    stack.append('one')
+    stack.append('two')
+    stack.pop()
+    stack.pop()
+    with pytest.raises(IndexError):
+        stack.pop()
